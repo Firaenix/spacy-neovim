@@ -42,3 +42,4 @@ nnoremap <S-Up>      <C-W>K
 nnoremap <S-Down>    <C-W>J
 nnoremap <S-Left>    <C-W>H
 nnoremap <S-Right>   <C-W>L
+
