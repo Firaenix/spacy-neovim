@@ -26,3 +26,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
+Plug 'preservim/nerdtree'
+Plug 'rust-lang/rust.vim'
+

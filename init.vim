@@ -9,3 +9,5 @@ endfor
 if filereadable("~/.nvim.local.vim")
   source ~/.nvim.local.vim
 endif
+
+nmap <C-t> :NERDTreeToggle<CR>
