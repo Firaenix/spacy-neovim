@@ -28,4 +28,5 @@ Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-fugitive'
 
