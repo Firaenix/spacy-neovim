@@ -29,4 +29,4 @@ Plug 'w0rp/ale'
 Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
