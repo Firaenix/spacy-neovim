@@ -64,4 +64,24 @@ set termguicolors " this variable must be enabled for colors to be applied prope
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
 
+" Nice BarBar integration
+
 :lua require'nvim-tree'.setup()
+    
+"call lua << EOF 
+"    function _G.barbar_events() 
+"        local nvim_tree_events = require('nvim-tree.events')
+"        local bufferline_state = require('bufferline.state')
+"
+"        nvim_tree_events.on_tree_open(function ()
+"            bufferline_state.set_offset(31, "File Tree")
+"
+"end)
+"
+"nvim_tree_events.on_tree_close(function ()
+"bufferline_state.set_offset(0)
+"end)
+"end
+"EOF
+
+
