@@ -1,6 +1,6 @@
 nnoremap <space> <nop>
-let mapleader = "\<space>"
-let maplocalleader = ","
+let mapleader = ","
+"let maplocalleader = ","
 
 nnoremap <leader>wm :tab sp<CR>
 nnoremap <leader>bD :bdelete!<CR>
@@ -41,3 +41,5 @@ nnoremap <S-Down>    <C-W>J
 nnoremap <S-Left>    <C-W>H
 nnoremap <S-Right>   <C-W>L
 
+" Copy to clipboard
+vmap <C-c> :w !pbcopy<CR><CR>
