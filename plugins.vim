@@ -3,7 +3,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 Plug 'embear/vim-localvimrc'
 Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/fzf.vim'
 Plug 'liuchengxu/vim-better-default'
 Plug 'radenling/vim-dispatch-neovim'
 Plug 'rafi/awesome-vim-colorschemes'
@@ -30,3 +29,11 @@ Plug 'mrjones2014/dash.nvim', { 'do': 'make install' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'hood/popui.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'RishabhRD/popfix'
