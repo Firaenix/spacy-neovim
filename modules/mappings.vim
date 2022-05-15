@@ -29,8 +29,6 @@ function! s:trim_trailing_whitespace()
   %s/\s\+$//e
 endfunction
 
-nmap <C-t> :NERDTreeToggle<CR>
-
 " Use Alt+Arrow keys to navigate windows.
 nnoremap <M-Up>        <C-W>k
 nnoremap <M-Down>      <C-W>j
