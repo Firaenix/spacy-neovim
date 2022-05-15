@@ -1,11 +1,7 @@
-Plug 'Olical/vim-scheme', { 'for': 'scheme', 'on': 'SchemeConnect' }
-Plug 'PeterRincker/vim-argumentative'
 Plug 'Shougo/deoplete.nvim'
 Plug 'airblade/vim-gitgutter'
-Plug 'clojure-vim/async-clj-omni', { 'for': 'clojure' }
 Plug 'easymotion/vim-easymotion'
 Plug 'embear/vim-localvimrc'
-Plug 'guns/vim-sexp' | Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'liuchengxu/vim-better-default'
@@ -29,4 +25,7 @@ Plug 'w0rp/ale'
 Plug 'preservim/nerdtree'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
-
+Plug 'timonv/vim-cargo'
+Plug 'mrjones2014/dash.nvim', { 'do': 'make install' }
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
