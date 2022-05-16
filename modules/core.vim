@@ -8,4 +8,4 @@ set updatetime=100
 set sessionoptions=blank,curdir,folds,help,tabpages,winsize
 set number
 
-au BufRead,BufNewFile *.metal setfiletype metal
+au BufRead,BufNewFile,BufReadPost *.metal setfiletype cpp

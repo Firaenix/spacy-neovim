@@ -58,5 +58,5 @@ hi def link metalTypes Type
 hi def link basicMetalKeywords Constant
 hi def link scalarMetalTypes Type
 
-let b:current_syntax = "metal"
+let b:current_syntax = "metal2"
 
