@@ -37,3 +37,4 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'RishabhRD/popfix'
+Plug 'neovim/nvim-lspconfig'

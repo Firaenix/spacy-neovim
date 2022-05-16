@@ -43,3 +43,5 @@ nnoremap <S-Right>   <C-W>L
 
 " Copy to clipboard
 vmap <C-c> :w !pbcopy<CR><CR>
+
+nnoremap <leader>, :lua vim.lsp.buf.code_action()<CR>
