@@ -44,4 +44,11 @@ nnoremap <S-Right>   <C-W>L
 " Copy to clipboard
 vmap <C-c> :w !pbcopy<CR><CR>
 
+" Language Server stuff (Intellisense, etc)
 nnoremap <leader>, :lua vim.lsp.buf.code_action()<CR>
+nnoremap <leader>i :lua vim.lsp.buf.implementation()<CR>
+nnoremap <leader>? :lua vim.lsp.buf.hover()<CR>
+nnoremap <leader>p :lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <leader>DD :lua vim.lsp.buf.declaration()<CR>
+nnoremap <leader>dd :lua vim.lsp.buf.definition()<CR>
+nnoremap <leader>rr :lua vim.lsp.buf.rename()<CR>
