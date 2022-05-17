@@ -1,10 +1,11 @@
-nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gb :Gblame<cr>
-nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>gp :Gpush<cr>
-nnoremap <leader>gl :Gpull<cr>
-nnoremap <leader>gf :Gfetch<cr>
-nnoremap <leader>gcc :Gcommit --verbose<cr>
-nnoremap <leader>gca :Gcommit --all --verbose<cr>
-nnoremap <leader>gdl :diffget LOCAL<CR>
-nnoremap <leader>gdr :diffget REMOTE<CR>
+nnoremap <leader>gs :Git status<cr>
+nnoremap <leader>gb :Git blame<cr>
+nnoremap <leader>gd :Git diff<cr>
+nnoremap <leader>gp :Git push<cr>
+nnoremap <leader>gl :Git pull<cr>
+nnoremap <leader>gf :Git fetch<cr>
+nnoremap <leader>ga :Git add .<cr>
+nnoremap <leader>gcm :Git commit --verbose<cr>
+" nnoremap <leader>gca :Git commit --all --verbose<cr>
+" nnoremap <leader>gdl :diffget LOCAL<CR>
+" nnoremap <leader>gd :diffget REMOTE<CR>
