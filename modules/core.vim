@@ -1,6 +1,6 @@
 set termguicolors
 set list
-set spell
+set nospell
 set wildmenu
 set wildmode=list:longest,full
 set mouse=a
