@@ -22,7 +22,11 @@ Plug 'w0rp/ale'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'rust-lang/rust.vim'
 Plug 'timonv/vim-cargo'
-Plug 'mrjones2014/dash.nvim', { 'do': 'make install' }
+
+if has('mac') 
+  Plug 'mrjones2014/dash.nvim', { 'do': 'make install' }
+endif
+
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -36,3 +40,4 @@ Plug 'junegunn/fzf.vim'
 Plug 'RishabhRD/popfix'
 Plug 'neovim/nvim-lspconfig'
 Plug 'brgmnn/vim-opencl'
+Plug 'glepnir/dashboard-nvim'
