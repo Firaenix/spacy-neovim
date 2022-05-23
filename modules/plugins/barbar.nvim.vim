@@ -1,29 +1,23 @@
 " Move to previous/next
-nnoremap <silent>    <A-,> :BufferPrevious<CR>
-nnoremap <silent>    <A-.> :BufferNext<CR>
+nnoremap <silent>    <M-,> :BufferPrevious<CR>
+nnoremap <silent>    <M-.> :BufferNext<CR>
 " Re-order to previous/next
-nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
-nnoremap <silent>    <A->> :BufferMoveNext<CR>
+nnoremap <silent>    <M-<> :BufferMovePrevious<CR>
+nnoremap <silent>    <M->> :BufferMoveNext<CR>
 " Goto buffer in position...
-nnoremap <silent>    <A-1> :BufferGoto 1<CR>
-nnoremap <silent>    <A-2> :BufferGoto 2<CR>
-nnoremap <silent>    <A-3> :BufferGoto 3<CR>
-nnoremap <silent>    <A-4> :BufferGoto 4<CR>
-nnoremap <silent>    <A-5> :BufferGoto 5<CR>
-nnoremap <silent>    <A-6> :BufferGoto 6<CR>
-nnoremap <silent>    <A-7> :BufferGoto 7<CR>
-nnoremap <silent>    <A-8> :BufferGoto 8<CR>
-nnoremap <silent>    <A-9> :BufferLast<CR>
+nnoremap <silent>    <M-1> :BufferGoto 1<CR>
+nnoremap <silent>    <M-2> :BufferGoto 2<CR>
+nnoremap <silent>    <M-3> :BufferGoto 3<CR>
+nnoremap <silent>    <M-4> :BufferGoto 4<CR>
+nnoremap <silent>    <M-5> :BufferGoto 5<CR>
+nnoremap <silent>    <M-6> :BufferGoto 6<CR>
+nnoremap <silent>    <M-7> :BufferGoto 7<CR>
+nnoremap <silent>    <M-8> :BufferGoto 8<CR>
+nnoremap <silent>    <M-9> :BufferLast<CR>
 " Pin/unpin buffer
-nnoremap <silent>    <A-p> :BufferPin<CR>
+nnoremap <silent>    <M-p> :BufferPin<CR>
 " Close buffer
-nnoremap <silent>    <A-c> :BufferClose<CR>
-" Close commands
-"                          :BufferCloseAllButCurrent<CR>
-"                          :BufferCloseAllButPinned<CR>
-"                          :BufferCloseAllButCurrentOrPinned<CR>
-"                          :BufferCloseBuffersLeft<CR>
-"                          :BufferCloseBuffersRight<CR>
+nnoremap <silent>    <M-c> :BufferClose<CR>
 
 lua << EOF
 require"nvim-tree.events".on_tree_open(function ()
