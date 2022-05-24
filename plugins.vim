@@ -41,4 +41,4 @@ Plug 'RishabhRD/popfix'
 Plug 'neovim/nvim-lspconfig'
 Plug 'brgmnn/vim-opencl'
 Plug 'glepnir/dashboard-nvim'
-Plug 'mhinz/vim-crates'
+Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
