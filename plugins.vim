@@ -28,8 +28,8 @@ if has('mac')
 endif
 
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'romgrk/barbar.nvim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hood/popui.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -42,3 +42,8 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'brgmnn/vim-opencl'
 Plug 'glepnir/dashboard-nvim'
 Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
+
+"Coq
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
