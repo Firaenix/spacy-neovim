@@ -1,4 +1,3 @@
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 Plug 'embear/vim-localvimrc'
@@ -19,7 +18,11 @@ Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline' 
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kyazdani42/nvim-tree.lua'
+
+" Rust
 Plug 'rust-lang/rust.vim'
+Plug 'mfussenegger/nvim-dap'
+Plug 'simrat39/rust-tools.nvim'
 Plug 'timonv/vim-cargo'
 
 if has('mac') 
@@ -27,8 +30,6 @@ if has('mac')
 endif
 
 Plug 'kyazdani42/nvim-web-devicons'
-" Plug 'romgrk/barbar.nvim'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hood/popui.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
