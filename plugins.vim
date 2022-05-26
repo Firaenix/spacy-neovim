@@ -1,4 +1,4 @@
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 Plug 'embear/vim-localvimrc'
@@ -18,7 +18,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline' 
 Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'rust-lang/rust.vim'
 Plug 'timonv/vim-cargo'
@@ -47,3 +46,4 @@ Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+Plug 'jose-elias-alvarez/typescript.nvim'

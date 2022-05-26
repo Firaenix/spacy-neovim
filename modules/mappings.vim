@@ -45,6 +45,7 @@ nnoremap <S-Right>   <C-W>L
 vmap <C-c> :w !pbcopy<CR><CR>
 
 " Language Server stuff (Intellisense, etc)
+vnoremap <silent> <leader>, :<c-u>lua vim.lsp.buf.range_code_action()<cr>
 nnoremap <leader>, :lua vim.lsp.buf.code_action()<CR>
 nnoremap <leader>i :lua vim.lsp.buf.implementation()<CR>
 nnoremap <leader>? :lua vim.lsp.buf.hover()<CR>
