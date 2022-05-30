@@ -15,14 +15,13 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'vim-airline/vim-airline' 
-Plug 'vim-airline/vim-airline-themes'
 Plug 'kyazdani42/nvim-tree.lua'
-
+Plug 'nvim-lua/lsp-status.nvim'
+Plug 'nvim-lualine/lualine.nvim'
 " Rust
 Plug 'rust-lang/rust.vim'
 Plug 'mfussenegger/nvim-dap'
-Plug 'simrat39/rust-tools.nvim'
+" Plug 'simrat39/rust-tools.nvim' - Inlay hints are a bit annoying.
 Plug 'timonv/vim-cargo'
 
 if has('mac') 
@@ -48,3 +47,5 @@ Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'jose-elias-alvarez/typescript.nvim'
+
+Plug 'hashivim/vim-terraform'

@@ -72,4 +72,6 @@ dap.configurations.cpp = {
 }
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
+
+vim.api.nvim_set_keymap("n", "<leader>dr", ":lua require('dap').run(dap.configurations,rust)", { silent = true })
 EOF
