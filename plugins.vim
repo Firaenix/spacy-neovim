@@ -28,18 +28,14 @@ if has('mac')
   Plug 'mrjones2014/dash.nvim', { 'do': 'make install' }
 endif
 
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'hood/popui.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'RishabhRD/popfix'
 Plug 'neovim/nvim-lspconfig'
 Plug 'brgmnn/vim-opencl'
-Plug 'glepnir/dashboard-nvim'
 Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
 
 "Coq
@@ -49,3 +45,8 @@ Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'jose-elias-alvarez/typescript.nvim'
 
 Plug 'hashivim/vim-terraform'
+
+" Theming
+Plug 'stevearc/dressing.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'glepnir/dashboard-nvim'

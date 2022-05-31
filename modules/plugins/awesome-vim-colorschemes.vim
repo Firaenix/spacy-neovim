@@ -1,1 +1,2 @@
-colorscheme space-vim-dark
+set termguicolors 
+colorscheme onedark

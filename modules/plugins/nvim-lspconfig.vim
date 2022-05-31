@@ -16,6 +16,8 @@ lsp.gopls.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
   capabilities = lsp_status.capabilities
 }))
+
+lsp.terraformls.setup(coq.lsp_ensure_capabilities({}))
 EOF
 
 lua <<EOF
@@ -25,3 +27,6 @@ require"typescript".setup({
     debug = false, -- enable debug logging for commands
 })
 EOF
+
+autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
+autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync()
