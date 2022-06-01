@@ -29,4 +29,3 @@ require"typescript".setup({
 EOF
 
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
-autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync()
