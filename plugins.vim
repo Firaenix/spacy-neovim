@@ -20,7 +20,7 @@ Plug 'nvim-lualine/lualine.nvim'
 " Rust
 Plug 'rust-lang/rust.vim'
 Plug 'mfussenegger/nvim-dap'
-Plug 'simrat39/rust-tools.nvim' - Inlay hints are a bit annoying.
+Plug 'simrat39/rust-tools.nvim'
 Plug 'timonv/vim-cargo'
 
 if has('mac') 
