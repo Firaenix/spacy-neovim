@@ -1,1 +1,0 @@
-lua require("autosave").setup()

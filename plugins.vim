@@ -4,7 +4,6 @@ Plug 'embear/vim-localvimrc'
 Plug 'jiangmiao/auto-pairs'
 Plug 'liuchengxu/vim-better-default'
 Plug 'radenling/vim-dispatch-neovim'
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -45,9 +44,12 @@ Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'jose-elias-alvarez/typescript.nvim'
 
 Plug 'hashivim/vim-terraform'
+" Plug 'Pocco81/AutoSave.nvim'
 
 " Theming
 Plug 'stevearc/dressing.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'glepnir/dashboard-nvim'
-Plug 'Pocco81/AutoSave.nvim'
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'augustocdias/tokyonight.nvim', { 'branch': 'main' }
+

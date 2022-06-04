@@ -10,8 +10,6 @@ nnoremap <leader>bo :call <SID>delete_hidden_buffers()<CR>
 nnoremap <leader>zz :call <SID>correct_to_first_spelling_suggestion()<CR>
 nnoremap <leader>tw :call <SID>trim_trailing_whitespace()<CR>
 tnoremap jk <c-\><c-n>
-nnoremap <leader>sw :mksession! .quicksave.vim<CR>:echo "Session saved."<CR>
-nnoremap <leader>sr :source .quicksave.vim<CR>:echo "Session loaded."<CR>
 
 function! s:delete_hidden_buffers()
   let tpbl=[]
@@ -53,6 +51,7 @@ nnoremap <leader>p :lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <leader>DD :lua vim.lsp.buf.declaration()<CR>
 nnoremap <leader>dd :lua vim.lsp.buf.definition()<CR>
 nnoremap <leader>rr :lua vim.lsp.buf.rename()<CR>
+nnoremap <leader>ff :lua vim.lsp.buf.formatting_sync()<CR>
 
 " Use Alt+Up/Down in Visual mode to move highlighted text
 inoremap <A-Down> <Esc>:m .+1<CR>==gi
