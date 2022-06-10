@@ -22,6 +22,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'mfussenegger/nvim-dap'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'timonv/vim-cargo'
+Plug 'bogado/file-line'
 
 if has('mac') 
   Plug 'mrjones2014/dash.nvim', { 'do': 'make install' }
@@ -31,8 +32,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'brgmnn/vim-opencl'
 Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
@@ -44,7 +43,8 @@ Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'jose-elias-alvarez/typescript.nvim'
 
 Plug 'hashivim/vim-terraform'
-" Plug 'Pocco81/AutoSave.nvim'
+Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.0.0' }
+Plug 'williamboman/nvim-lsp-installer' 
 
 " Theming
 Plug 'stevearc/dressing.nvim'

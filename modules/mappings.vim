@@ -51,7 +51,7 @@ nnoremap <leader>p :lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <leader>DD :lua vim.lsp.buf.declaration()<CR>
 nnoremap <leader>dd :lua vim.lsp.buf.definition()<CR>
 nnoremap <leader>rr :lua vim.lsp.buf.rename()<CR>
-nnoremap <leader>ff :lua vim.lsp.buf.formatting_sync()<CR>
+nnoremap <leader>F :lua vim.lsp.buf.formatting_sync()<CR>
 
 " Use Alt+Up/Down in Visual mode to move highlighted text
 inoremap <A-Down> <Esc>:m .+1<CR>==gi
