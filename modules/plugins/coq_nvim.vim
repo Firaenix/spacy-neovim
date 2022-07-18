@@ -4,7 +4,10 @@ vim.g.coq_settings = {
     ["keymap.pre_select"] = false,
     ["completion.always"] = true,
     ["completion.smart"] = true,
-    ["display.preview.border"] = "rounded"
-    
+    display = {
+        preview = {
+            border = "rounded"
+        }
+    }
 }
 EOF

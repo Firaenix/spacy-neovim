@@ -62,3 +62,7 @@ vnoremap <A-Up> :m '<-2<CR>gv=gv
 " Save and Load Sessions
 nmap <Leader>ss :<C-u>SessionSave<CR>
 nmap <Leader>sl :<C-u>SessionLoad<CR>
+
+" Close tab buffer
+nnoremap <silent> <C-w> <Cmd>BufferClose<CR>
+nnoremap <silent> <C-p>    <Cmd>BufferPick<CR>

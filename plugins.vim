@@ -51,5 +51,7 @@ Plug 'stevearc/dressing.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'glepnir/dashboard-nvim'
 " Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'augustocdias/tokyonight.nvim', { 'branch': 'main' }
+Plug 'folke/lsp-colors.nvim'
+Plug 'tanvirtin/monokai.nvim'
+Plug 'romgrk/barbar.nvim'
 
