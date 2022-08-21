@@ -1,7 +1,7 @@
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
 Plug 'embear/vim-localvimrc'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'liuchengxu/vim-better-default'
 Plug 'radenling/vim-dispatch-neovim'
 Plug 'simnalamburt/vim-mundo'
@@ -33,8 +33,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
-Plug 'brgmnn/vim-opencl'
-Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
+" Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
 
 "Coq
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
@@ -42,7 +41,6 @@ Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'jose-elias-alvarez/typescript.nvim'
 
-Plug 'hashivim/vim-terraform'
 Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.0.0' }
 Plug 'williamboman/nvim-lsp-installer' 
 
@@ -55,3 +53,9 @@ Plug 'folke/lsp-colors.nvim'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'romgrk/barbar.nvim'
 
+
+Plug 'brgmnn/vim-opencl'
+Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
+Plug 'hashivim/vim-terraform'
+Plug 'leafgarland/typescript-vim'
+Plug 'cstrahan/vim-capnp'

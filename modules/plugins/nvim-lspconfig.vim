@@ -8,10 +8,25 @@ lsp.rust_analyzer.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
   capabilities = lsp_status.capabilities
 }))
-lsp.tsserver.setup(coq.lsp_ensure_capabilities({
+
+lsp.denols.setup({
+    on_attach = lsp_status.on_attach,
+    capabilities = lsp_status.capabilities,
+    single_file_support = false,
+    root_dir = lsp.util.root_pattern("deno.json", "deno.jsonc"),
+})
+
+vim.g.markdown_fenced_languages = {
+    "ts=typescript"
+}
+
+lsp.tsserver.setup({
   on_attach = lsp_status.on_attach,
-  capabilities = lsp_status.capabilities
-}))
+  capabilities = lsp_status.capabilities,
+  root_dir = lsp.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
+})
+
+
 lsp.gopls.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
   capabilities = lsp_status.capabilities
