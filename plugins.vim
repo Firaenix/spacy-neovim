@@ -33,6 +33,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/mason.nvim'
 " Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
 
 "Coq
@@ -42,7 +43,6 @@ Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'jose-elias-alvarez/typescript.nvim'
 
 Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.0.0' }
-Plug 'williamboman/nvim-lsp-installer' 
 
 " Theming
 Plug 'stevearc/dressing.nvim'

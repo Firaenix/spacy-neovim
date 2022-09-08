@@ -23,6 +23,7 @@ vim.g.markdown_fenced_languages = {
 lsp.tsserver.setup({
   on_attach = lsp_status.on_attach,
   capabilities = lsp_status.capabilities,
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
   root_dir = lsp.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
 })
 
