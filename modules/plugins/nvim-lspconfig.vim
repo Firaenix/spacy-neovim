@@ -9,24 +9,46 @@ lsp.rust_analyzer.setup(coq.lsp_ensure_capabilities({
   capabilities = lsp_status.capabilities
 }))
 
-lsp.denols.setup({
+lsp.denols.setup(coq.lsp_ensure_capabilities({
     on_attach = lsp_status.on_attach,
     capabilities = lsp_status.capabilities,
     single_file_support = false,
     root_dir = lsp.util.root_pattern("deno.json", "deno.jsonc"),
-})
+}))
 
+-- NodeJS, TypeScript, HTML, JSX, React, CSS
 vim.g.markdown_fenced_languages = {
     "ts=typescript"
 }
 
-lsp.tsserver.setup({
+lsp.tsserver.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
   capabilities = lsp_status.capabilities,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
   root_dir = lsp.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
-})
+}))
 
+lsp.tailwindcss.setup(coq.lsp_ensure_capabilities({
+  on_attach = lsp_status.on_attach,
+  capabilities = lsp_status.capabilities,
+  filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "django-html", "htmldjango", "edge", "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "haml", "handlebars", "hbs", "html", "html-eex", "heex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact", "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" },
+  root_dir = lsp.util.root_pattern('tailwind.config.js', 'tailwind.config.ts', 'postcss.config.js', 'postcss.config.ts', 'package.json', 'node_modules', '.git'),
+}))
+
+lsp.emmet_ls.setup(coq.lsp_ensure_capabilities({
+    on_attach = lsp_status.on_attach,
+    capabilities = lsp_status.capabilities,
+    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
+    init_options = {
+      html = {
+        options = {
+          -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+          ["bem.enabled"] = true,
+        },
+      },
+    }
+}))
+--
 
 lsp.gopls.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
@@ -37,11 +59,11 @@ lsp.terraformls.setup(coq.lsp_ensure_capabilities({}))
 EOF
 
 lua <<EOF
-require"typescript".setup({
+require"typescript".setup(coq.lsp_ensure_capabilities({
     disable_commands = false, -- prevent the plugin from creating Vim commands
     disable_formatting = false, -- disable tsserver's formatting capabilities
     debug = false, -- enable debug logging for commands
-})
+}))
 EOF
 
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
