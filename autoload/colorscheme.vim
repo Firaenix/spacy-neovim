@@ -1,5 +1,5 @@
 set termguicolors 
 
-" colorscheme tokyonight
+"colorscheme tokyonight
 
 colorscheme monokai_pro

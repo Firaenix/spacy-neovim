@@ -82,6 +82,28 @@ local border_juncright  = "╣"
 
 local if_nil = vim.F.if_nil
 
+-- this is for diagnositcs signs on the line number column
+-- use this to beautify the plain E W signs to more fun ones
+-- !important nerdfonts needs to be setup for this to work in your terminal
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " } 
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl= hl, numhl = hl })
+end
+
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = '●', -- Could be '●', '▎', 'x'
+  }
+})
+
+vim.cmd [[
+  highlight! DiagnosticLineNrError guibg=#51202A guifg=#FF0000 gui=bold
+  highlight! DiagnosticLineNrWarn guibg=#51412A guifg=#FFA500 gui=bold
+  highlight! DiagnosticLineNrInfo guibg=#1E535D guifg=#00FFFF gui=bold
+  highlight! DiagnosticLineNrHint guibg=#1E205D guifg=#0000FF gui=bold
+]]
+
 vim.lsp.diagnostic.show_line_diagnostics = function(opts, bufnr, line_nr, client_id)
     opts = opts or {}
     opts.severity_sort = if_nil(opts.severity_sort, true)

@@ -28,6 +28,7 @@ if has('mac')
   Plug 'mrjones2014/dash.nvim', { 'do': 'make install' }
 endif
 
+Plug 'folke/trouble.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
@@ -48,10 +49,11 @@ Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.0.0' }
 Plug 'stevearc/dressing.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'glepnir/dashboard-nvim'
-" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'folke/lsp-colors.nvim'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'romgrk/barbar.nvim'
+Plug 'NvChad/nvim-colorizer.lua'
 
 
 Plug 'brgmnn/vim-opencl'
