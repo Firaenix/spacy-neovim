@@ -1,5 +1,5 @@
 Plug 'airblade/vim-gitgutter'
-Plug 'easymotion/vim-easymotion'
+Plug 'ggandor/leap.nvim'
 Plug 'embear/vim-localvimrc'
 " Plug 'jiangmiao/auto-pairs'
 Plug 'liuchengxu/vim-better-default'
