@@ -42,4 +42,8 @@ nnoremap <silent> <C-w> <Cmd>BufferClose<CR>
 nnoremap <silent> <C-p>    <Cmd>BufferPick<CR>
 
 noremap <silent> <leader>** :DashWord<CR>
+" Dont filter by file type
+noremap <silent> <leader>!** :DashWord!<CR>
 noremap <silent> <leader>* :Dash<CR>
+" Dont filter by file type
+noremap <silent> <leader>!* :Dash!<CR>
