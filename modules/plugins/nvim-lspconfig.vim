@@ -10,23 +10,17 @@ lsp.rust_analyzer.setup(coq.lsp_ensure_capabilities({
 }))
 
 lsp.denols.setup(coq.lsp_ensure_capabilities({
-    on_attach = lsp_status.on_attach,
-    capabilities = lsp_status.capabilities,
-    single_file_support = false,
-    root_dir = lsp.util.root_pattern("deno.json", "deno.jsonc"),
+  on_attach = lsp_status.on_attach,
+  capabilities = lsp_status.capabilities,
+  root_dir = lsp.util.root_pattern("deno.json", "deno.jsonc"),
 }))
-
--- NodeJS, TypeScript, HTML, JSX, React, CSS
-vim.g.markdown_fenced_languages = {
-    "ts=typescript"
-}
 
 lsp.tsserver.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
   capabilities = lsp_status.capabilities,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  root_dir = lsp.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
+  root_dir = lsp.util.root_pattern("package.json"),
 }))
+
 
 lsp.tailwindcss.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
@@ -56,14 +50,6 @@ lsp.gopls.setup(coq.lsp_ensure_capabilities({
 }))
 
 lsp.terraformls.setup(coq.lsp_ensure_capabilities({}))
-EOF
-
-lua <<EOF
-require"typescript".setup(coq.lsp_ensure_capabilities({
-    disable_commands = false, -- prevent the plugin from creating Vim commands
-    disable_formatting = false, -- disable tsserver's formatting capabilities
-    debug = false, -- enable debug logging for commands
-}))
 EOF
 
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()

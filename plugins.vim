@@ -41,7 +41,6 @@ Plug 'williamboman/mason.nvim'
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
-Plug 'jose-elias-alvarez/typescript.nvim'
 
 Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.0.0' }
 
