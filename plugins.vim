@@ -35,6 +35,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
+Plug 'evanleck/vim-svelte'
 " Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
 
 "Coq

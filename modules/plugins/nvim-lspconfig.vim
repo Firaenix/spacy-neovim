@@ -21,6 +21,10 @@ lsp.tsserver.setup(coq.lsp_ensure_capabilities({
   root_dir = lsp.util.root_pattern("package.json"),
 }))
 
+lsp.svelte.setup(coq.lsp_ensure_capabilities({
+  on_attach = lsp_status.on_attach,
+  capabilities = lsp_status.capabilities
+}))
 
 lsp.tailwindcss.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
@@ -32,7 +36,7 @@ lsp.tailwindcss.setup(coq.lsp_ensure_capabilities({
 lsp.emmet_ls.setup(coq.lsp_ensure_capabilities({
     on_attach = lsp_status.on_attach,
     capabilities = lsp_status.capabilities,
-    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less' },
+    filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'css', 'sass', 'scss', 'less', 'svelte' },
     init_options = {
       html = {
         options = {
