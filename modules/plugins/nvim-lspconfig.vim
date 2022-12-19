@@ -18,7 +18,7 @@ lsp.denols.setup(coq.lsp_ensure_capabilities({
 lsp.tsserver.setup(coq.lsp_ensure_capabilities({
   on_attach = lsp_status.on_attach,
   capabilities = lsp_status.capabilities,
-  root_dir = lsp.util.root_pattern("package.json"),
+  root_dir = lsp.util.root_pattern("package.json", "yarn.lock"),
 }))
 
 lsp.svelte.setup(coq.lsp_ensure_capabilities({
