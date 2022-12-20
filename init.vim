@@ -6,6 +6,10 @@ for file in split(glob(Dot("modules/*.vim")), "\n")
   execute "source" file
 endfor
 
+for file in split(glob(Dot("modules/*.lua")), "\n")
+  execute "source" file
+endfor
+
 for file in split(glob(Dot("autoload/*.vim")), "\n")
   execute "source" file
 endfor

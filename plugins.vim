@@ -64,3 +64,4 @@ Plug 'cstrahan/vim-capnp'
 
 " Misc
 Plug 'jackMort/ChatGPT.nvim'
+Plug 'MunifTanjim/nui.nvim'
