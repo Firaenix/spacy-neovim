@@ -43,7 +43,7 @@ Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 
-Plug 'akinsho/toggleterm.nvim', { 'tag': 'v2.0.0' }
+Plug 'akinsho/toggleterm.nvim', { 'tag': '2.3.0' }
 
 " Theming
 Plug 'stevearc/dressing.nvim'
@@ -61,3 +61,6 @@ Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }
 Plug 'hashivim/vim-terraform'
 Plug 'leafgarland/typescript-vim'
 Plug 'cstrahan/vim-capnp'
+
+" Misc
+Plug 'jackMort/ChatGPT.nvim'
