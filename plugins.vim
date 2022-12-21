@@ -43,8 +43,6 @@ Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 
-Plug 'akinsho/toggleterm.nvim', { 'tag': '2.3.0' }
-
 " Theming
 Plug 'stevearc/dressing.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
