@@ -47,3 +47,15 @@ noremap <silent> <leader>!** :DashWord!<CR>
 noremap <silent> <leader>* :Dash<CR>
 " Dont filter by file type
 noremap <silent> <leader>!* :Dash!<CR>
+
+" Terminal setup
+" Open a new terminal
+nnoremap <silent> <leader>t :hsplit term://zsh<CR>
+" exit terminal mode
+tnoremap <Esc> <C-\><C-n>
+
+" Navigate windows in Terminal mode
+tnoremap <S-Up>      <C-W>K
+tnoremap <S-Down>    <C-W>J
+tnoremap <S-Left>    <C-W>H
+tnoremap <S-Right>   <C-W>L
