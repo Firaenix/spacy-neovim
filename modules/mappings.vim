@@ -50,7 +50,9 @@ noremap <silent> <leader>!* :Dash!<CR>
 
 " Terminal setup
 " Open a new terminal
-nnoremap <silent> <leader>t :hsplit term://zsh<CR>
+nnoremap <silent> <leader>t :10sp term://zsh<CR>
+" auto start in terminal mode
+autocmd TermOpen * startinsert
 " exit terminal mode
 tnoremap <Esc> <C-\><C-n>
 
